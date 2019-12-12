@@ -3,6 +3,7 @@
 }
 
 .grid {
+    justify-content: center;
     display: grid;
     grid-template-columns: 320px 200px;
 }
@@ -14,12 +15,22 @@
 }
 
 .game-board {
+
     border: solid 2px;
 }
 
 .play-button {
+    margin-top: 20px;
     background-color: #4caf50;
     font-size: 16px;
+
     padding: 15px 30px;
     cursor: pointer;
+}
+
+.nextup {
+    padding-top: 10px;
+    text-align: center;
+    border: solid 1px;
+    background: whitesmoke;
 }

@@ -5,36 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Old School Arcade | Tetris</title>
-    <title>JavaScript Tetris</title>
-    <meta property="og:title" content="JavaScript Tetris" />
-    <meta name="description" content="Tetris game made with modern JavaScript.">
-    <meta name="twitter:description" content="Tetris game made with modern Javascript.">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@melcor76" />
-    <meta name="keywords" content="JavaScript, Tetris">
-    <meta name="author" content="Michael Karén">
-    <meta
-    property="og:image"
-    content="https://focused-mestorf-930f82.netlify.com/assets/share-image.png"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- FontAwesome script link -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
 </head>
 <body>
-    <div class="grid">
-        <canvas id="board" class="game-board"></canvas>
-        <div class="right-column">
-            <div>
-                <h1>TETRIS</h1>
-                <p>Score: <span id="score">0</span></p>
+        <nav class="navbar sticky-top navbar-light bg-light">
                 <p>Lines: <span id="lines">0</span></p>
+                <p>Score: <span id="score">0</span></p>
                 <p>Level: <span id="level">0</span></p>
+            </nav>
+            <br>
+            <div class="title" style="text-align: center;">
+    <h1>TETRIS</h1>
+</div>
+<br>
+
+    <div class="grid" >
+        <canvas id="board" class="game-board" style="text-align: center;"></canvas>
+        <div class="right-column">
+            
+            <div class="nextup">
+            
                 <canvas id="next" class="next"></canvas>
+                <p>next up:</p> 
             </div>
-            <button onclick="play()" class="play-button">Play</button>
+            <div class="play" style="text-align: center;">
+                    <button onclick="play()" class="play-button">Play</button>
+            </div>
         </div>
     </div>
 
+    <footer class="footer mt-auto py-3">
+            <div class="copyright" style="text-align: center; font-size: 10px;" >
+                    <span>&copy; Copyright 2019 Mia Dugas. Some Rights Reserved. Made with <i class="fa fa-xs fa-heart" style="color:red; font-size: larger;" ></i></span>
+            </div>
+    </footer>
+    
     <script type="text/javascript" src="constants.js"></script>
     <script type="text/javascript" src="board.js"></script>
     <script type="text/javascript" src="piece.js"></script>
