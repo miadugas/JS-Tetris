@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <!-- FontAwesome script link -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
 </head>
@@ -19,25 +20,66 @@
                 <p>Level: <span id="level">0</span></p>
             </nav>
             <br>
-            <div class="title" style="text-align: center;">
-    <h1>TETRIS</h1>
-</div>
+
+
+<div class="container">
+    
+            <div class="row">
+                <!-- <div class="col-4 nextup">
+                        <canvas id="next" class="next"></canvas>
+                </div> -->
+                <div class="col title" style="text-align: center;">
+                        <h1>TETRIS</h1>
+                        <div class="col-12 div-ctrl">
+                        <!-- <div class="col nextup"> -->
+                                <canvas id="next" class="next nextup" style="display: inline-block"></canvas>
+                                <!-- <button type="button" onclick="play()" class="button btn-sm play-button" style="border: solid 1px;" >Play</button> -->
+                                <!-- <button onclick="play()" class="button btn play-button">Play</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+                <div class="div col" style="text-align: center; align-content: center; padding-top: 20px;">
+                <button type="button" onclick="play()" class="btn btn-primary btn-sm play-button">Start Game</button>
+                <!-- <div class="col-6 play" style="text-align: center;">
+                        <button onclick="play()" class="button btn play-button">Play</button>
+                </div> -->
+            </div>
+        
+<!-- <div class="title" style="text-align: center;">
+    <h1>TETRIS</h1> -->
+    <!-- <div class="play" style="text-align: center;"> -->
+            <!-- <button onclick="play()" class="button btn play-button">Play</button> -->
+    <!-- </div> -->
+    <!-- <div class="right-column grid col-6">
+            
+            <div class="nextup ">
+            
+                <canvas id="next" class="next"></canvas> -->
+                <!-- <p>next up:</p>  -->
+            <!-- </div>
+        </div> -->
+<!-- </div> -->
 <br>
 
-    <div class="grid" >
+
+<div class="main-contain">
+    <div class="grid col">
         <canvas id="board" class="game-board" style="text-align: center;"></canvas>
-        <div class="right-column">
+        <!-- <div class="right-column grid col-6"> -->
             
-            <div class="nextup">
+            <!-- <div class="nextup ">
             
                 <canvas id="next" class="next"></canvas>
                 <p>next up:</p> 
-            </div>
-            <div class="play" style="text-align: center;">
-                    <button onclick="play()" class="play-button">Play</button>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="play" style="text-align: center;">
+                <button onclick="play()" class="button btn play-button">Play</button>
+        </div> -->
     </div>
+</div>
 
     <footer class="footer mt-auto py-3">
             <div class="copyright" style="text-align: center; font-size: 10px;" >

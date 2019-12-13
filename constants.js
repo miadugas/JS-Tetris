@@ -9,7 +9,7 @@ const COLORS = [
   'cyan',
   'blue',
   'orange',
-  'yellow',
+  'pink',
   'green',
   'purple',
   'red'
